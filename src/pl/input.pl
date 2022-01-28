@@ -73,13 +73,6 @@ equal_duration(Sequence, Event1, Event2) :-
 
 % Theories
 
-pain(sub_seq_pain04).
-pain(sub_seq_pain105).
-pain(sub_seq_pain29).
-pain(sub_seq_pain34).
-pain(sub_seq_pain90).
-pain(sub_seq_pain96).
-
 % only AUs considered
 % PainAU7AndAU10OfEqualDurationAndSameIntensity
 pain(A) :- event(A,B,C,D,au07,E), event(A,F,C,D,au10,E).

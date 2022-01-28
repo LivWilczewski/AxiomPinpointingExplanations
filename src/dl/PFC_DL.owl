@@ -1,0 +1,911 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/liv/ontologies/2021/9/PainDisgust_PFC"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/liv/ontologies/2021/9/PainDisgust_PFC">
+    <Prefix name="" IRI="http://www.semanticweb.org/liv/ontologies/2021/9/PainDisgust_PFC"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AU"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intensity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PainAU4AndAU6"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PainAU6FinishesWithAU4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PainAU6FinishesWithAU9"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PainAU7AndAU10OfEqualDurationAndSameIntensity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PainAU7OverlapsAU6"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PainAU9EqualDurationAU6"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PainAU9FinishesWithAU6"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PainBeforeAU7IsAU18"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PainIndividuals"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sequence"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#before"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#equalDuration"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#equalDurationAndSameIntensity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#finishesWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAU"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasIntensity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#overlaps"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#au01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#au04"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#au06"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#au07"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#au09"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#au10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#au12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#au14"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#au15"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#au18"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#au19"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#au20"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#au25"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#au26"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#au43"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#e10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#e11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#e12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#e13"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#e14"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#e1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#e8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#e9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#e2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#e3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#e4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#e5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#e6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#e7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#intensity_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#intensity_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#intensity_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#intensity_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#intensity_5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#intensity_none"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#s2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#s1"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#PainAU4AndAU6"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasEvent"/>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#hasAU"/>
+                    <NamedIndividual IRI="#au04"/>
+                </ObjectHasValue>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasEvent"/>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#hasAU"/>
+                    <NamedIndividual IRI="#au06"/>
+                </ObjectHasValue>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PainAU6FinishesWithAU4"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasEvent"/>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#finishesWith"/>
+                    <ObjectHasValue>
+                        <ObjectProperty IRI="#hasAU"/>
+                        <NamedIndividual IRI="#au04"/>
+                    </ObjectHasValue>
+                </ObjectSomeValuesFrom>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#hasAU"/>
+                    <NamedIndividual IRI="#au06"/>
+                </ObjectHasValue>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PainAU6FinishesWithAU9"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasEvent"/>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#finishesWith"/>
+                    <ObjectHasValue>
+                        <ObjectProperty IRI="#hasAU"/>
+                        <NamedIndividual IRI="#au09"/>
+                    </ObjectHasValue>
+                </ObjectSomeValuesFrom>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#hasAU"/>
+                    <NamedIndividual IRI="#au06"/>
+                </ObjectHasValue>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PainAU7AndAU10OfEqualDurationAndSameIntensity"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasEvent"/>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#equalDurationAndSameIntensity"/>
+                    <ObjectHasValue>
+                        <ObjectProperty IRI="#hasAU"/>
+                        <NamedIndividual IRI="#au10"/>
+                    </ObjectHasValue>
+                </ObjectSomeValuesFrom>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#hasAU"/>
+                    <NamedIndividual IRI="#au07"/>
+                </ObjectHasValue>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PainAU7OverlapsAU6"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasEvent"/>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#overlaps"/>
+                    <ObjectHasValue>
+                        <ObjectProperty IRI="#hasAU"/>
+                        <NamedIndividual IRI="#au06"/>
+                    </ObjectHasValue>
+                </ObjectSomeValuesFrom>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#hasAU"/>
+                    <NamedIndividual IRI="#au07"/>
+                </ObjectHasValue>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PainAU9EqualDurationAU6"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasEvent"/>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#equalDuration"/>
+                    <ObjectHasValue>
+                        <ObjectProperty IRI="#hasAU"/>
+                        <NamedIndividual IRI="#au09"/>
+                    </ObjectHasValue>
+                </ObjectSomeValuesFrom>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#hasAU"/>
+                    <NamedIndividual IRI="#au06"/>
+                </ObjectHasValue>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PainAU9FinishesWithAU6"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasEvent"/>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#finishesWith"/>
+                    <ObjectHasValue>
+                        <ObjectProperty IRI="#hasAU"/>
+                        <NamedIndividual IRI="#au06"/>
+                    </ObjectHasValue>
+                </ObjectSomeValuesFrom>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#hasAU"/>
+                    <NamedIndividual IRI="#au09"/>
+                </ObjectHasValue>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PainBeforeAU7IsAU18"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasEvent"/>
+            <ObjectIntersectionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty IRI="#before"/>
+                    <ObjectHasValue>
+                        <ObjectProperty IRI="#hasAU"/>
+                        <NamedIndividual IRI="#au18"/>
+                    </ObjectHasValue>
+                </ObjectSomeValuesFrom>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#hasAU"/>
+                    <NamedIndividual IRI="#au07"/>
+                </ObjectHasValue>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#PainAU4AndAU6"/>
+        <Class IRI="#Pain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PainAU6FinishesWithAU4"/>
+        <Class IRI="#Pain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PainAU6FinishesWithAU9"/>
+        <Class IRI="#Pain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PainAU7AndAU10OfEqualDurationAndSameIntensity"/>
+        <Class IRI="#Pain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PainAU7OverlapsAU6"/>
+        <Class IRI="#Pain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PainAU9EqualDurationAU6"/>
+        <Class IRI="#Pain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PainAU9FinishesWithAU6"/>
+        <Class IRI="#Pain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PainBeforeAU7IsAU18"/>
+        <Class IRI="#Pain"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PainIndividuals"/>
+        <Class IRI="#Pain"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#AU"/>
+        <NamedIndividual IRI="#au01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AU"/>
+        <NamedIndividual IRI="#au04"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AU"/>
+        <NamedIndividual IRI="#au06"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AU"/>
+        <NamedIndividual IRI="#au07"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AU"/>
+        <NamedIndividual IRI="#au09"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AU"/>
+        <NamedIndividual IRI="#au10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AU"/>
+        <NamedIndividual IRI="#au12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AU"/>
+        <NamedIndividual IRI="#au14"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AU"/>
+        <NamedIndividual IRI="#au15"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AU"/>
+        <NamedIndividual IRI="#au18"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AU"/>
+        <NamedIndividual IRI="#au19"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AU"/>
+        <NamedIndividual IRI="#au20"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AU"/>
+        <NamedIndividual IRI="#au25"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AU"/>
+        <NamedIndividual IRI="#au26"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AU"/>
+        <NamedIndividual IRI="#au43"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Event"/>
+        <NamedIndividual IRI="#e10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Event"/>
+        <NamedIndividual IRI="#e11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Event"/>
+        <NamedIndividual IRI="#e12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Event"/>
+        <NamedIndividual IRI="#e13"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Event"/>
+        <NamedIndividual IRI="#e14"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Event"/>
+        <NamedIndividual IRI="#e1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Event"/>
+        <NamedIndividual IRI="#e8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Event"/>
+        <NamedIndividual IRI="#e9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Event"/>
+        <NamedIndividual IRI="#e2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Event"/>
+        <NamedIndividual IRI="#e3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Event"/>
+        <NamedIndividual IRI="#e4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Event"/>
+        <NamedIndividual IRI="#e5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Event"/>
+        <NamedIndividual IRI="#e6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Event"/>
+        <NamedIndividual IRI="#e7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Intensity"/>
+        <NamedIndividual IRI="#intensity_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Intensity"/>
+        <NamedIndividual IRI="#intensity_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Intensity"/>
+        <NamedIndividual IRI="#intensity_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Intensity"/>
+        <NamedIndividual IRI="#intensity_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Intensity"/>
+        <NamedIndividual IRI="#intensity_5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Intensity"/>
+        <NamedIndividual IRI="#intensity_none"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sequence"/>
+        <NamedIndividual IRI="#s2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sequence"/>
+        <NamedIndividual IRI="#s1"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#before"/>
+        <NamedIndividual IRI="#e10"/>
+        <NamedIndividual IRI="#e11"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#before"/>
+        <NamedIndividual IRI="#e10"/>
+        <NamedIndividual IRI="#e12"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#before"/>
+        <NamedIndividual IRI="#e10"/>
+        <NamedIndividual IRI="#e13"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#before"/>
+        <NamedIndividual IRI="#e10"/>
+        <NamedIndividual IRI="#e14"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAU"/>
+        <NamedIndividual IRI="#e10"/>
+        <NamedIndividual IRI="#au04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIntensity"/>
+        <NamedIndividual IRI="#e10"/>
+        <NamedIndividual IRI="#intensity_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAU"/>
+        <NamedIndividual IRI="#e11"/>
+        <NamedIndividual IRI="#au07"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIntensity"/>
+        <NamedIndividual IRI="#e11"/>
+        <NamedIndividual IRI="#intensity_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#overlaps"/>
+        <NamedIndividual IRI="#e11"/>
+        <NamedIndividual IRI="#e12"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#overlaps"/>
+        <NamedIndividual IRI="#e11"/>
+        <NamedIndividual IRI="#e13"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#overlaps"/>
+        <NamedIndividual IRI="#e11"/>
+        <NamedIndividual IRI="#e14"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAU"/>
+        <NamedIndividual IRI="#e12"/>
+        <NamedIndividual IRI="#au09"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIntensity"/>
+        <NamedIndividual IRI="#e12"/>
+        <NamedIndividual IRI="#intensity_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#equalDuration"/>
+        <NamedIndividual IRI="#e13"/>
+        <NamedIndividual IRI="#e14"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#equalDurationAndSameIntensity"/>
+        <NamedIndividual IRI="#e13"/>
+        <NamedIndividual IRI="#e14"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#finishesWith"/>
+        <NamedIndividual IRI="#e13"/>
+        <NamedIndividual IRI="#e12"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAU"/>
+        <NamedIndividual IRI="#e13"/>
+        <NamedIndividual IRI="#au15"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIntensity"/>
+        <NamedIndividual IRI="#e13"/>
+        <NamedIndividual IRI="#intensity_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#equalDuration"/>
+        <NamedIndividual IRI="#e14"/>
+        <NamedIndividual IRI="#e13"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#equalDurationAndSameIntensity"/>
+        <NamedIndividual IRI="#e14"/>
+        <NamedIndividual IRI="#e13"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#finishesWith"/>
+        <NamedIndividual IRI="#e14"/>
+        <NamedIndividual IRI="#e12"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAU"/>
+        <NamedIndividual IRI="#e14"/>
+        <NamedIndividual IRI="#au12"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIntensity"/>
+        <NamedIndividual IRI="#e14"/>
+        <NamedIndividual IRI="#intensity_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAU"/>
+        <NamedIndividual IRI="#e1"/>
+        <NamedIndividual IRI="#au10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIntensity"/>
+        <NamedIndividual IRI="#e1"/>
+        <NamedIndividual IRI="#intensity_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAU"/>
+        <NamedIndividual IRI="#e8"/>
+        <NamedIndividual IRI="#au09"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIntensity"/>
+        <NamedIndividual IRI="#e8"/>
+        <NamedIndividual IRI="#intensity_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#overlaps"/>
+        <NamedIndividual IRI="#e8"/>
+        <NamedIndividual IRI="#e9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAU"/>
+        <NamedIndividual IRI="#e9"/>
+        <NamedIndividual IRI="#au07"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIntensity"/>
+        <NamedIndividual IRI="#e9"/>
+        <NamedIndividual IRI="#intensity_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#before"/>
+        <NamedIndividual IRI="#e2"/>
+        <NamedIndividual IRI="#e8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#before"/>
+        <NamedIndividual IRI="#e2"/>
+        <NamedIndividual IRI="#e9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAU"/>
+        <NamedIndividual IRI="#e2"/>
+        <NamedIndividual IRI="#au07"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIntensity"/>
+        <NamedIndividual IRI="#e2"/>
+        <NamedIndividual IRI="#intensity_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#before"/>
+        <NamedIndividual IRI="#e3"/>
+        <NamedIndividual IRI="#e8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#before"/>
+        <NamedIndividual IRI="#e3"/>
+        <NamedIndividual IRI="#e9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#finishesWith"/>
+        <NamedIndividual IRI="#e3"/>
+        <NamedIndividual IRI="#e2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAU"/>
+        <NamedIndividual IRI="#e3"/>
+        <NamedIndividual IRI="#au04"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIntensity"/>
+        <NamedIndividual IRI="#e3"/>
+        <NamedIndividual IRI="#intensity_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#before"/>
+        <NamedIndividual IRI="#e4"/>
+        <NamedIndividual IRI="#e8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#before"/>
+        <NamedIndividual IRI="#e4"/>
+        <NamedIndividual IRI="#e9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#finishesWith"/>
+        <NamedIndividual IRI="#e4"/>
+        <NamedIndividual IRI="#e2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#finishesWith"/>
+        <NamedIndividual IRI="#e4"/>
+        <NamedIndividual IRI="#e3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAU"/>
+        <NamedIndividual IRI="#e4"/>
+        <NamedIndividual IRI="#au09"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIntensity"/>
+        <NamedIndividual IRI="#e4"/>
+        <NamedIndividual IRI="#intensity_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#before"/>
+        <NamedIndividual IRI="#e5"/>
+        <NamedIndividual IRI="#e8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#before"/>
+        <NamedIndividual IRI="#e5"/>
+        <NamedIndividual IRI="#e9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAU"/>
+        <NamedIndividual IRI="#e5"/>
+        <NamedIndividual IRI="#au25"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIntensity"/>
+        <NamedIndividual IRI="#e5"/>
+        <NamedIndividual IRI="#intensity_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#overlaps"/>
+        <NamedIndividual IRI="#e5"/>
+        <NamedIndividual IRI="#e6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#before"/>
+        <NamedIndividual IRI="#e6"/>
+        <NamedIndividual IRI="#e8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#before"/>
+        <NamedIndividual IRI="#e6"/>
+        <NamedIndividual IRI="#e9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#finishesWith"/>
+        <NamedIndividual IRI="#e6"/>
+        <NamedIndividual IRI="#e2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#finishesWith"/>
+        <NamedIndividual IRI="#e6"/>
+        <NamedIndividual IRI="#e3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#finishesWith"/>
+        <NamedIndividual IRI="#e6"/>
+        <NamedIndividual IRI="#e4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAU"/>
+        <NamedIndividual IRI="#e6"/>
+        <NamedIndividual IRI="#au06"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIntensity"/>
+        <NamedIndividual IRI="#e6"/>
+        <NamedIndividual IRI="#intensity_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#before"/>
+        <NamedIndividual IRI="#e7"/>
+        <NamedIndividual IRI="#e8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#before"/>
+        <NamedIndividual IRI="#e7"/>
+        <NamedIndividual IRI="#e9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAU"/>
+        <NamedIndividual IRI="#e7"/>
+        <NamedIndividual IRI="#au25"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasIntensity"/>
+        <NamedIndividual IRI="#e7"/>
+        <NamedIndividual IRI="#intensity_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvent"/>
+        <NamedIndividual IRI="#s2"/>
+        <NamedIndividual IRI="#e10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvent"/>
+        <NamedIndividual IRI="#s2"/>
+        <NamedIndividual IRI="#e11"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvent"/>
+        <NamedIndividual IRI="#s2"/>
+        <NamedIndividual IRI="#e12"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvent"/>
+        <NamedIndividual IRI="#s2"/>
+        <NamedIndividual IRI="#e13"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvent"/>
+        <NamedIndividual IRI="#s2"/>
+        <NamedIndividual IRI="#e14"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvent"/>
+        <NamedIndividual IRI="#s1"/>
+        <NamedIndividual IRI="#e1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvent"/>
+        <NamedIndividual IRI="#s1"/>
+        <NamedIndividual IRI="#e8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvent"/>
+        <NamedIndividual IRI="#s1"/>
+        <NamedIndividual IRI="#e9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvent"/>
+        <NamedIndividual IRI="#s1"/>
+        <NamedIndividual IRI="#e2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvent"/>
+        <NamedIndividual IRI="#s1"/>
+        <NamedIndividual IRI="#e3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvent"/>
+        <NamedIndividual IRI="#s1"/>
+        <NamedIndividual IRI="#e4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvent"/>
+        <NamedIndividual IRI="#s1"/>
+        <NamedIndividual IRI="#e5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvent"/>
+        <NamedIndividual IRI="#s1"/>
+        <NamedIndividual IRI="#e6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEvent"/>
+        <NamedIndividual IRI="#s1"/>
+        <NamedIndividual IRI="#e7"/>
+    </ObjectPropertyAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

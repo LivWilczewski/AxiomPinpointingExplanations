@@ -18,4 +18,5 @@ This can be used to visualize the ontology in Protégé
 The pl directory contains the code to run the axiom pinpointing in Prolog.
 Therefore install SWI-Prolog (https://www.swi-prolog.org/) and 
 start the main.pl from the directory it is stored in using the console:
+
 ?- swipl main.pl

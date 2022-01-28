@@ -81,17 +81,17 @@ pain(sub_seq_pain90).
 pain(sub_seq_pain96).
 
 % only AUs considered
-% PainAU7AndAU10OfEqualDurationAndSameIntensity: P03, P14
+% PainAU7AndAU10OfEqualDurationAndSameIntensity
 pain(A) :- event(A,B,C,D,au07,E), event(A,F,C,D,au10,E).
-% PainAU9FinishesWithAU6OrViceVersaOrAU9EqualDurationAU6: P102, P109, P117, P31
+% PainAU9FinishesWithAU6OrViceVersaOrAU9EqualDurationAU6
 pain(A) :- event(A,B,C,D,au09,E), event(A,F,G,D,au06,H).
-% PainAU4AndAU6: P102, P106, P109, P20
+% PainAU4AndAU6
 pain(A) :- event(A,B,C,D,au04,E), event(A,F,G,H,au06,I).
 
 % Relations between AUs
-% PainAU7OverlapsAU6: P03, P106, P31
+% PainAU7OverlapsAU6
 pain(A) :- overlaps(A,B,C), is_au(C,au06), is_au(B,au07).
-% PainAU6FinishesWithAU4: P102, P20
+% PainAU6FinishesWithAU4
 pain(A) :- finishes_with(A,B,C), is_au(B,au06), is_au(C,au04).
-% PainBeforeAU7IsAU18: P104, P109
+% PainBeforeAU7IsAU18
 pain(A) :- before(A,B,C), is_au(C,au18), is_au(B,au07).

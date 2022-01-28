@@ -2,6 +2,7 @@
 realization of the axiom pinpointing algorithm for explanatory dialogs
 
 The repository contains the following structure:
+
 src
  + dl
    - PFC_DL.owl

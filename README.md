@@ -2,18 +2,14 @@
 realization of the axiom pinpointing algorithm for explanatory dialogs
 
 The repository contains the following structure:
-+ src
-|
-+ - + dl
-|   |
-|   + - PFC_DL.owl
-|
-+ - + pl
-    |
-    + - axiom_pinpointing.pl
-    + - input.pl
-    + - io.pl
-    + - main.pl
+src
+ + dl
+   - PFC_DL.owl
+ + pl
+   - axiom_pinpointing.pl
+   - input.pl
+   - io.pl
+   - main.pl
 
 The dl directory contains the translation of the input.pl in form of an OWL/XML file.
 This can be used to visualize the ontology in Protégé 
